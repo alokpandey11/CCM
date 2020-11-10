@@ -14,7 +14,7 @@ body {
       rgba(61, 101, 139, 0.3),
       rgba(61, 101, 139, 0.3)
     ),
-    url("../images/peace.jpg");
+    url("../images/11.jpg");
   background-size: cover, cover;
   background-position: center, right bottom;
   background-repeat: no-repeat, no-repeat;
@@ -41,8 +41,15 @@ body {
   letter-spacing: 0;
   text-align: right;
   margin-right: 15%;
-      text-shadow: 1px 2px 7px rgba(53,23,14,0.5);
+  text-shadow: 1px 2px 7px rgba(53,23,14,0.5);
+  margin-bottom: max(2vw, 25px);
 
+}
+.landing .site-btn{
+      width: 250px;
+    display: grid;
+    margin: auto;
+ 
 }
 
 .header-section button{
@@ -158,7 +165,11 @@ Helper CSS
 }
 
 .section-title h2 {
-  font-size: 60px;
+     font-family: Merriweather;
+    font-size: 60px;
+    letter-spacing: 0.05vw;
+    text-align: center;
+    font-weight: 500;
 }
 
 .set-bg {
