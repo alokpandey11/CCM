@@ -126,10 +126,11 @@ img {
 }
 .work-box {
   border: solid;
+  -webkit-box-shadow: 5px 5px 20px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px -1px rgba(0, 0, 0, 0.5);
 }
 
 a.projectAG img.img-fluid {
-  height: 200px;
   width: 100%;
 }
 .work-img img {
@@ -139,6 +140,16 @@ a.projectAG img.img-fluid {
   max-width: 100%;
   height: auto;
 }
+.w-title {
+  font-family: merriweather;
+  font-size: 28px;
+  margin-bottom: 5px;
+  padding: 0px 5px 5px 3px;
+}
+.w-more {
+  padding: 5px 10px 10px 5px;
+}
+
 
 h1,
 h2,
@@ -968,6 +979,11 @@ Responsive
   .hr-img {
     display: none;
   }
+
+  .work-box {
+    border: solid 2px;
+    margin: 5px 5px 15px 5px;
+    
 
   .Showcase-section .con .site-btn {
     margin: 10px;
