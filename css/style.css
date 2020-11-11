@@ -113,6 +113,33 @@ img {
   background-size: 1550px;
 }
 
+.how-section .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+.work-box {
+  border: solid;
+}
+
+a.projectAG img.img-fluid {
+  height: 200px;
+  width: 100%;
+}
+.work-img img {
+  transition: all 1s;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
