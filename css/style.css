@@ -6,6 +6,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   height: 100%;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -107,21 +108,151 @@ img {
 }
 
 .Showcase-section .con {
-  width: calc(100% - 10px);
+  width: 100%;
   height: 300px;
   background-image: url(../images/peace.jpg);
   background-size: 1500px;
   left: 0;
   right: 0;
   bottom: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 10px;
   transition: 0.5s ease;
 }
 
 .con:hover {
-  background-size: 1550px;
+  background-size: 1600px;
+}
+
+.column {
+  width: 30rem;
+  padding: 8px 10px;
+  /*margin: 1px 3px;*/
+}
+
+.column .flip-card {
+  border: solid white;
+  position: relative;
+  height: 280px;
+  width: 300px;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  perspective: 1000px;
+}
+
+.column .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.column .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.column .flip-card-front,
+.column .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.card-tile {
+  color: #000;
+}
+.card-text:last-child {
+  color: #000;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+b,
+strong {
+  font-family: merriweather;
+  color: black;
+  font-weight: bolder;
+  font-size: smaller;
+}
+.column .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.column .flip-card-back {
+  background-color: #f2f2f2;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.c-faderight,
+.c-fadeleft {
+  opacity: 0;
+}
+
+.animatedRight {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeRight {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeRight {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fadeRight {
+  -webkit-animation-name: fadeRight;
+  animation-name: fadeRight;
+}
+
+.animatedLeft {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeLeft {
+  from {
+    transform: (150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fadeLeft {
+  -webkit-animation-name: fadeLeft;
+  animation-name: fadeLeft;
 }
 
 .how-section .row {
@@ -989,7 +1120,13 @@ Responsive
   .hr-img {
     display: none;
   }
+
+  .column .flip-card {
+    margin-left: 20%;
+  }
+
   .Showcase-section .con {
+    width: 100%;
     height: 300px;
     background-image: url(../images/peace.jpg);
     background-size: 1500px;
@@ -997,6 +1134,7 @@ Responsive
     right: 0;
     bottom: 0px;
     transition: 0.5s ease;
+    margin: 0px 0px 10px 0px;
   }
 
   .Showcase-section .con h1 {
@@ -1161,7 +1299,11 @@ Responsive
   .section-title h2,
   .hs-item h2,
   .sub-text h2 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  .column .flip-card {
+    margin-left: 10%;
   }
 
   .header-section {
