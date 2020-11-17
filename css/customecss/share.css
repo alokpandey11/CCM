@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+  box-sizing: border-box;
+}
+form {
+  max-width: 800px;
+  padding: 10px 20px;
+  margin: 3.5% auto;
+  border-radius: 8px;
+  border-color: #ccff00;
+  background-color: #cbeaed;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  height: auto;
+  font-size: 16px;
+  margin: 0;
+  background-color: whitesmoke;
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+  border-color: yellowgreen;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 10px;
+}
+input:focus {
+  box-shadow: 0 0 10px #00468c;
+  border: 1px solid #00468c;
+  border-radius: 5px;
+}
+textarea:focus {
+  box-shadow: 0 0 10px #00468c;
+  border: 1px solid #00468c;
+  border-radius: 5px;
+}
+
+.contentclass {
+  box-shadow: 0 1px 0 white inset;
+}
+.form-required {
+  color: red;
+  font-size: 1.2rem;
+}
+
+
