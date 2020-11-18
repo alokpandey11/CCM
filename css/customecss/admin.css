@@ -1,26 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-
-:root {
-  --page-header-bgColor: #242e42;
-  --page-header-bgColor-hover: #1d2636;
-  --page-header-txtColor: #dde9f8;
-  --page-header-headingColor: #7889a4;
-  --page-header-width: 220px;
-  --page-content-bgColor: #f0f1f6;
-  --page-content-txtColor: #171616;
-  --page-content-blockColor: #fff;
-  --white: #fff;
-  --black: #333;
-  --blue: #00b9eb;
-  --red: #ec1848;
-  --border-radius: 4px;
-  --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -57,7 +39,6 @@ svg {
 body {
   font: 16px/1.5 "Lato", sans-serif;
 }
-
 
 /* HEADER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -182,7 +163,6 @@ body {
   fill: var(--blue);
 }
 
-
 /* PAGE CONTENT STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-content {
@@ -194,9 +174,6 @@ body {
   color: var(--page-content-txtColor);
   background: var(--page-content-bgColor);
 }
-
-
-
 
 .page-content .grid {
   display: grid;
@@ -217,7 +194,6 @@ body {
   grid-column: 1 / -1;
 }
 
-
 /* MQ RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1280px) {
@@ -226,7 +202,7 @@ body {
     position: static;
     width: 100%;
   }
-   
+
   .page-header {
     padding: 10px;
   }
@@ -261,12 +237,12 @@ body {
   .page-header .admin-menu li:nth-last-child(2) {
     margin-bottom: 12px;
   }
-  
+
   .page-header .admin-menu li:last-child,
   .search-and-user .admin-profile .greeting {
     display: none;
   }
-  
+
   .page-content {
     min-height: 0;
     padding: 10px;
@@ -275,7 +251,6 @@ body {
   .page-content .grid {
     grid-gap: 10px;
   }
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -283,7 +258,6 @@ body {
     grid-column: 1 / -1;
   }
 }
-
 
 /* BODY CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -326,7 +300,6 @@ body {
   }
 }
 
-
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
@@ -346,7 +319,6 @@ body {
   text-align: center;
   display: flex;
   width: 33.33%;
-  
 }
 
 .column2 {
@@ -355,7 +327,6 @@ body {
   padding: 10px;
   display: flex;
   width: 65%;
-  
 }
 
 .column3 {
@@ -364,7 +335,6 @@ body {
   padding: 10px;
   display: flex;
   width: 35%;
-  
 }
 
 .column4 {
@@ -373,7 +343,6 @@ body {
   padding: 10px;
   display: flex;
   width: 50%;
-  
 }
 
 .column5 {
@@ -382,25 +351,22 @@ body {
   padding: 10px;
   display: flex;
   width: 80%;
-  
 }
-.icon{
-        width:65px;
-        border-radius: 100%;
-        float: left;
-        margin-left: 3vw;
-    }
+.icon {
+  width: 65px;
+  border-radius: 100%;
+  float: left;
+  margin-left: 3vw;
+}
 
-.card{
+.card {
   width: 100%;
   height: 100%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   text-align: left;
   word-wrap: break-word;
 }
-
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -419,18 +385,18 @@ body {
   clear: both;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1024px) {
-  .row{
-   display: flex;
-    flex-direction: column; 
+@media screen and (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-direction: column;
   }
-  .row1{
-     display: flex;
+  .row1 {
+    display: flex;
     flex-direction: column-reverse;
   }
-  .row2{
-   display: flex;
-    flex-direction: column; 
+  .row2 {
+    display: flex;
+    flex-direction: column;
   }
 
   .column1 {
@@ -441,21 +407,23 @@ body {
   }
   .column3 {
     width: 100%;
-
   }
   .column4 {
     width: 100%;
-
   }
   .column5 {
     width: 100%;
-
   }
-
 }
 
-
-.row2{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+.row2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .chrt3 {
   padding-bottom: 50px;
 }
@@ -468,7 +436,6 @@ body {
   padding: 15px;
 }
 
-
 .dropbtn {
   background-color: #333;
   color: white;
@@ -479,13 +446,14 @@ body {
   margin-left: 2vw;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
   background-color: #333;
 }
 
 #myInput {
   box-sizing: border-box;
-  background-image: url('searchicon.png');
+  background-image: url("searchicon.png");
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -494,7 +462,9 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
 
 .dropdown {
   position: relative;
@@ -518,7 +488,10 @@ body {
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
-
+.show {
+  display: block;
+}
