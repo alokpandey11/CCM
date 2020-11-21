@@ -129,8 +129,7 @@ img {
 }
 
 #fixedsize .w-title {
-  padding-left: 10vw;
-  margin-left: 20%;
+  font-weight: 400;
 }
 .con:hover {
   background-size: 1600px;
