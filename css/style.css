@@ -119,7 +119,19 @@ img {
   margin-bottom: 10px;
   transition: 0.5s ease;
 }
+#fixedsize {
+  width: 20vw;
+  height: 357px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+#fixedsize .w-title {
+  padding-left: 10vw;
+  margin-left: 20%;
+}
 .con:hover {
   background-size: 1600px;
 }
@@ -1381,5 +1393,20 @@ Responsive
     width: 250px;
     display: grid;
     margin: auto;
+  }
+  #fixedsize .w-title {
+    padding: 0px;
+    margin: 0px;
+  }
+  #fixedsize {
+    margin-left: 20px;
+    padding: 0px;
+    border: solid;
+    width: 89vw;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
