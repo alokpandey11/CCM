@@ -15,12 +15,13 @@ body {
 
 .landing {
   height: 650px;
-  background-image: linear-gradient(
+  background-image: url(../images/14.jpg);
+  backgrund-image: linear-gradient(
       to right,
       rgba(61, 101, 139, 0.3),
       rgba(61, 101, 139, 0.3)
     ),
-    url("../images/11.jpg");
+    url("../images/12.jpg");
   background-size: cover, cover;
   background-position: center, right bottom;
   background-repeat: no-repeat, no-repeat;
@@ -92,10 +93,11 @@ img {
 }
 
 .Showcase-section .con h1 {
+  color: white;
   font-size: max(2.6vw, 16px);
   text-align: center;
   padding: 120px;
-  text-shadow: 0px 0px 2px rgba(51, 15, 241, 0.66);
+  text-shadow: 0px 0px 2px rgba(17, 17, 17, 0.66);
 }
 .Showcase-section .con .btnn {
   display: flex;
@@ -119,6 +121,19 @@ img {
   margin-bottom: 10px;
   transition: 0.5s ease;
 }
+
+#join {
+  background-image: url(../images/showcase/18.jpg);
+}
+
+#join2 {
+  background-image: url(../images/showcase/14.jpg);
+}
+
+#join3 {
+  background-image: url(../images/showcase/15.jpg);
+}
+
 #fixedsize {
   width: 20vw;
   height: 357px;
@@ -1422,5 +1437,8 @@ Responsive
     font-size: 8vw;
     margin-top: 40px;
     padding-right: 47vw;
+  }
+  .Showcase-section .con {
+    height: 450px;
   }
 }
