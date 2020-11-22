@@ -958,6 +958,13 @@ Contact page
   font-size: 24px;
   margin-bottom: 15px;
 }
+.section-title hr {
+  position: relative;
+  left: 35%;
+  display: block;
+  width: 30%;
+  border: 0.8px solid;
+}
 
 .email {
   letter-spacing: 0;
@@ -1006,6 +1013,14 @@ Contact page
     display: block;
     text-align: center;
     margin: 0;
+  }
+  .section-title hr {
+    margin: 6px;
+    position: relative;
+    left: 10%;
+    display: block;
+    width: 75%;
+    border: 0.5px solid;
   }
 
   .contactinfo {
